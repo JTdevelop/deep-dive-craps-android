@@ -7,9 +7,9 @@
   android:layout_height="match_parent"
   tools:context="edu.cnm.deepdive.craps.MainActivity">
 
-  <TextView
-    android:id="@+id/game_status"
-    android:layout_width="wrap_content"
+  <ListView
+    android:id="@+id/game_rolls"
+    android:layout_width="match_parent"
     android:layout_height="0dp"
     android:textSize="24sp"
     app:layout_constraintBottom_toTopOf="@+id/play_game"
