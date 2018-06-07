@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import java.security.SecureRandom;
 import java.util.Random;
@@ -14,7 +15,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
   private Game game;
-  private Button play;
+  private ImageButton play;
   private ListView rolls;
   private Random rng;
   private RollsAdapter rollsAdapter;

@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
   android:padding="8dp"
-  android:textAlignment="center"
-  android:textSize="18sp">
+  android:gravity="center"
+  android:orientation="horizontal">
 
-</TextView>
+  <ImageView
+    android:id="@+id/die_1"
+    android:layout_width="52dp"
+    android:layout_height="52dp"
+    android:layout_marginRight="12dp"/>
+
+  <ImageView
+    android:id="@+id/die_2"
+    android:layout_width="52dp"
+    android:layout_height="52dp"/>
+
+  <TextView
+    android:id="@+id/dice_sum"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textStyle="bold"/>
+
+</LinearLayout>
