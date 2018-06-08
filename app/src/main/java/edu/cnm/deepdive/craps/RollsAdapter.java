@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class RollsAdapter extends ArrayAdapter<Roll> {
 
-  private Game game;
+  private State state;
   private Drawable[] faces;
 
   public RollsAdapter(@NonNull Context context, int resource) {
@@ -45,7 +45,7 @@ public class RollsAdapter extends ArrayAdapter<Roll> {
     die2.setImageDrawable(faces[roll.getDice()[1] - 1]);
     diceSum.setText(getContext().getString(R.string.dice_sum_pattern, roll.getSum()));
     if (position == getCount() - 1) {
-      if (game.getState() == State.WIN) {
+      if (state == State.WIN) {
         rollView.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.win_background));
       } else {
         rollView.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.loss_background));
@@ -55,7 +55,7 @@ public class RollsAdapter extends ArrayAdapter<Roll> {
     return rollView;
   }
 
-  public void setGame(Game game) {
-    this.game = game;
+  public void setState(State state) {
+    this.state = state;
   }
 }
