@@ -12,5 +12,11 @@
   ##information displayed on the layout screen is:
   
   *dice rolls used
+  *Play Once
+  *Run
+  *Reset
+  *Wins
+  *Plays
+  *% of wins
   
   

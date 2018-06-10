@@ -34,7 +34,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/layout_margin"
     android:padding="@dimen/button_padding"
-   android:drawablePadding="@dimen/icon_padding"
+    android:drawablePadding="@dimen/icon_padding"
     android:drawableStart="@drawable/ic_skip_next_black_24dp"
     android:text="@string/play_button"
     app:layout_constraintBottom_toBottomOf="parent"
@@ -55,17 +55,17 @@
     app:layout_constraintLeft_toRightOf="@id/play_game"
     app:layout_constraintRight_toLeftOf="@+id/reset_game"/>
 
-    <Button
-      android:id="@+id/reset_game"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_margin="@dimen/layout_margin"
-      android:padding="@dimen/button_padding"
-      android:drawablePadding="@dimen/button_padding"
-      android:drawableStart="@drawable/ic_autorenew_black_24dp"
-      android:text="@string/reset_button"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toRightOf="@id/play_continuously"
-      app:layout_constraintRight_toRightOf="parent"/>
+  <Button
+    android:id="@+id/reset_game"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/layout_margin"
+    android:padding="@dimen/button_padding"
+    android:drawablePadding="@dimen/button_padding"
+    android:drawableStart="@drawable/ic_autorenew_black_24dp"
+    android:text="@string/reset_button"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toRightOf="@id/play_continuously"
+    app:layout_constraintRight_toRightOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>

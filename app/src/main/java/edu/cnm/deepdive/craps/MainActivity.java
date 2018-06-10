@@ -106,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
   }
 
   private class Worker extends Thread {
+
     private edu.cnm.deepdive.craps.State state;
     private Roll[] rolls;
     private long threadPlays;
